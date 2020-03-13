@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#myDiv:hover {
+  transform: rotateX(150deg);
+  transition: transform 2s;
+}
+#myDiv1:hover {
+  transform: rotateY(150deg);
+  transition: transform 2s;
+}
+
+#myDiv2:hover {
+  transform: rotateZ(90deg);
+  transition: transform 2s;
+}
+#myDiv3:hover {
+  transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+  transition: transform 2s;
+}
+#myDiv4:hover {
+  transform: scale3d(2.5, 1.2, 0.3);
+  transition: transform 2s;
+}
+</style>
+</head>
+<body style="text-align:center;">
+
+<h1>CSS Transforms</h1>
+<p>There are many different types of Transforms in CSS.</p>
+<p>Hover over the object in order to see the transforms.</p>
+
+<div id="myDiv">
+Rotate X
+</div>
+
+<div id="myDiv1">
+Rotate Y
+</div>
+
+<div id="myDiv2">
+Rotate Z
+</div>
+
+<div id="myDiv3">
+Crazy Transform Matrix
+</div>
+
+<div id="myDiv4">
+Zoom or scale3d
+</div>
+</body>
+</html>
